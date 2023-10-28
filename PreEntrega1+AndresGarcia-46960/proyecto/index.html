@@ -1,0 +1,83 @@
+    <!DOCTYPE html> <!-- Esta línea le comunica a la web que vas a usar formato HTML-->
+    <html lang="es">
+        <head> <!-- Todo lo que va dentro del HEAD ES CONFIGURACIÓN para el navegador-->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./css/style.css">
+            <title> Airbag | Sitio NO Oficial </title>
+            <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+        </head>
+
+        <body> <!-- Lo que va dentro del body es lo que ve el usuario-->
+            <header>                                                    <!-- Cabecera / Header-->
+                    <nav class="navegacion">        <!-- Respecto a la navegación, me gustaría que el logo quede en el medio y sea el anchor que lleve al home, mientras que las otras anclas queden distribuidas a lo largo de la pantalla. A fines de entregar lo dejo a la izquierda en index.html pero me gustaría que quede como se ve en cualquiera de los otros sitios-->
+                        <a href=""><img class="LogoTop" href="" src="./assets/img/logoairbag.png" alt="Logo"> </a>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./pages/laBanda.html">La Banda</a></li>
+                            <li><a href="./pages/musica.html">Musica</a></li>
+                            
+                            <li><a href="./pages/shows.html">Shows</a></li>
+                            <li><a href="./pages/tienda.html">Tienda</a></li>
+                        </ul>
+                    </nav>
+            </header>
+
+            <main>                                                      <!-- Cuerpo / Main-->
+                <section class="bannerTop">     <!-- Esta sección está dedicada al video superior, puede ser carrusel en un futuro, por ahora lleva un video -->
+                    <video class="videoTop" src="./assets/video/ssstwitter.com_1696425792559.mp4" autoplay muted loop alt="videobanner"></video>
+                    <h1 class="tituloPag">
+                        Home
+                    </h1>
+                    <h2 class="txtSobreImagen">                                                    <!-- Tiene que haber un titulo principal por página obligatoriamente-->
+                        Airbag
+                    </h2>
+                    <h3 class="txtSobreImagen">                                                     <!-- Texto complementario para banner-->
+                        La banda argentina del momento presenta Jinetes Cromados Tour en el Estadio José Amalfitani este 15 de Diciembre <br>
+                        Entradas ya a la venta por <a href="https://www.tuentrada.com/eventos/detalle/Airbag/517435397248" target="_blank">Tuentrada.com</a>
+                    </h3>
+                </section>
+
+                <section class="textoBanda">    <!-- Sección donde se hace una breve introducción de la banda-->
+                        <p>
+                            Airbag es una banda de rock Argentina formado en Don Torcuato en el año 2003. El grupo fue fundado y es integrado por los hermanos Gastón Sardelli (bajista) , Patricio Sardelli (guitarra líder y voz) y Guido Sardelli (guitarrista).
+                            Empezaron desde muy pequeños a tocar juntos a mediados de los años 90's bajo el nombre de Los Nietos de Chuck, donde hacían covers de Chuck Berry, The Beatles, Creedence, entre otros.
+                            <br>
+                            Airbag no solo es conocida por su música, sino también por su estilo único, su carisma en el escenario y su potencia y versatilidad en vivo. Han mantenido una base de seguidores leales a lo largo de los años y continúan produciendo música emocionante que conecta con audiencias de todas las edades.
+                        </p>
+                </section>
+
+                <section class="musica">    <!-- La idea es presentar los álbumes como lista y al hacer click, mostrar la foto del album a la derecha y el logo de spotify que te lleve a escuchar el álbum-->    
+                        <ul>
+                            <li><a href="https://open.spotify.com/intl-es/album/25wv6eU2tDQDPLAYTyuj2Q"target="_blank">Al Parecer Todo Ha Sido Una Trampa (2021)</a></li>
+                            <li><a href="https://open.spotify.com/intl-es/album/6GaIpvZKFBFsUj2xcPeajL"target="_blank">Mentira La Verdad (2016)</a></li>
+                            <li><a href="https://open.spotify.com/intl-es/album/44V33dl0drKUZAcrGcL0sN"target="_blank">Libertad (2013)</a></li>
+                            <li><a href="https://open.spotify.com/intl-es/album/7IlDM4DB3KkquIIQh0KDOb"target="_blank">Vorágine (2011)</a></li>
+                            <li><a href="https://open.spotify.com/intl-es/album/6uUEq1am8AnjeQrAz86veH"target="_blank">Una Hora a Tokio (2008)</a></li>
+                            <li><a href="https://open.spotify.com/intl-es/album/6MXrSUvZmjNuSCqOmRRkDw"target="_blank">Blanco y Negro (2006)</a></li>
+                            <li><a href="https://open.spotify.com/intl-es/album/4FtWJXF1bvQ4Q7PGbGGgMQ"target="_blank">Airbag(2004)</a></li>
+                        </ul>
+                </section>
+
+                <section class="proximosShows"> <!-- Próximos Shows con mapa, info y que direccionen a la compra de entradas al igual que al sitio de todos los shows. Quiero poner la info a la derecha del mapa y no sé como (Ver Wireframe) -->   
+                        <h2>
+                            Próximos shows
+                        </h2>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.055640163599!2d-58.5206968!3d-34.635406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8382fb08ab9%3A0xea0ca78972856a8e!2sEstadio%20Jos%C3%A9%20Amalfitani!5e0!3m2!1ses!2sdk!4v1696512095971!5m2!1ses!2sdk" width="700" height="500" style="border: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        
+                        <h3>
+                            15 de Diciembre<br>
+                            Estadio José Amalfitani
+                        </h3>
+
+                    </section>
+
+            </main>
+
+            <footer class="pieDePagina">                                                    <!-- Pie de página / Footer-->
+                <p><h6> Todos los derechos reservados ©<br> Airbag <br>Septiembre 2023</h6></p>
+            </footer>
+        </body>
+    </html>

@@ -1,201 +1,128 @@
-/*
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dela+Gothic+One&family=Oswald:wght@300;400;700&family=Russo+One&family=Saira+Extra+Condensed:wght@200;400;700&display=swap');
+
+html{
+    font-size: 24px;
+}
 *{
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
 }
 
+video{
+    margin-top: -11em;
+}
+
+.LogoTop{ 
+    max-width: 30vh;
+}
+
 a{
     color: white;
     text-decoration: none;
-    border: 1px;
-    text-shadow: 3px -1px 8px rgba(0,0,0,1);
 }
 
-header{
-    background-color: rgb(220, 20, 20);
+.cabecera{
+    background-color: gray;
 }
 
-p{
-    color: white;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    font: 200;
-    text-align: center;
+.bannerTop{
+    background-color: black;
+    opacity: 90%;
+
 }
 
-h1{
-    color: rgb(220, 20, 20);
+.sombraTexto{
+    text-shadow: 3px -1px 8px rgba(0,0,0,1)
+}
+
+.videoTop{
+    max-height: 85vh;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+.LogoTop{
+    min-width: 30vh;
+}
+
+.txtSobreImagen{
+    margin-top: -16em;
+}
+
+.fuente1{
     font-family: 'Dela Gothic One', cursive;
 }
 
-h2{
+.fuente2{
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.fuenteBlanca{
     color: white;
-    font-family: 'Dela Gothic One', cursive;;
-    font-size: 7rem ;
-    max-width: 40%;
-
 }
 
-h3{
-    color: white;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    font-size: 2rem ;
-    max-width: 2000%;
-}
-label{
-    color: gray;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    font: 200;
-    font-size: larger;
+.txtSobreImagen h2{
+  font-size: 4.5rem;
 }
 
-legend{
-    color: gray;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    font: 200;
-    font-size: larger;
+.textoBanda{
+    background-color: brown;
+    height: auto;
 }
 
-h6{
-    color: gray;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    font: 200;
-    font-size: larger;
-}
-
-
-li{
-    width: 100%;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    font-family: 'Alfa Slab One', cursive;
-    font: 400;
-    font-size: large;
-    display: inline;
-    padding-left: 85px;
-    padding-left: 85px;
-}
-
-ul{
-    justify-content: space-evenly;
-    overflow: hidden;
-    display: inline;
-}
-
-iframe{
-    margin: 50px 50px 50px 50px;
-    display: inline;
-}
-*/
-
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*
-.navegacion{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-.navegacion li{
-    padding-left: auto;
-    padding-right: auto;
-}
-
-
-.txtSobreImagen{
-    position: absolute;
-    left: 5vh;
-}
-.bannerTop h2{
-    bottom: 5vh;
-}
-.bannerTop h3{
-    bottom: -8vh;
-}
-.txtSobreImagen a{
-    color: blue;
-    text-decoration: underline;
-    border-color:white;;
-}
-.bannerTop{
-    width: 100%;
-    height: 700px;
-    scroll-behavior: smooth;
-    background-color: black;
-    overflow: hidden;
-}
-.videoTop{
-    width: 100%;
-    height: 100vh;
-    opacity: 50%;
+.fotoMusica{
+    object-fit: contain;
+    width: 70%;
     object-fit: cover;
 }
-.textoBanda{
-    background-color: rgb(220, 20, 20);
-    text-shadow: 3px -1px 8px rgba(0,0,0,1);
-    height: 250px;
-    font-size: x-large;
-    display: flex;
-    align-items: center;
-}
-.LogoTop{ 
-    display: inline;
-    max-width: 30vh;
-}
-.musica{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 350px;
-    scroll-behavior: smooth;
-    background-color: black;
-    overflow: hidden;
-    background-image: url(../assets/img/banner1.jpg);
-    background-position: 50% 70%;
-}
-
 .listadoAlbums{
-    width: 50%;
-}
-.fotoAlbum{
-    width: 50%;
-    background-color: wheat;
-    justify-self: flex-end;
+    height: 100%;
 }
 
-.musica li{ 
-    margin: 20px 0px 20px 0px;
-    display: block;
-    align-content: space-evenly;
-}
-.musica ul{
-    position: absolute;
-    display: inline;
-    align-content: space-evenly;
-}
-.proximosShows{
-    display: grid;
-    align-items: center;
-    background-color: blueviolet;
-    width: 100%;
-    height: 700px;
-    text-shadow: 3px -1px 8px rgba(0,0,0,1);
-    overflow: hidden;
-}
-.proximosShows h2{
-    margin: 10px 0px 10px 0px;
-    font-size: 2rem;
-    justify-self: center;
-}
-.mapaShows{
-    align-content: center;
-}
-.tituloPag{
-    display: none;
+.botonCompraEntrada{
+    color: white;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 4rem;
+    box-shadow: 3px -1px 8px rgba(0,4,0,4)
 }
 
-*/
+@media screen and (max-width:768px) {
+    ul{
+        display: none;
+    }
+
+    .LogoTop{
+        min-width: 20vh;
+    }
+
+    .fotoMusica{
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    ul{
+        display: none;
+    }
+
+    .LogoTop{
+        min-width: 20vh;
+    }
+
+    .fotoMusica{
+        display: none;
+    }
+
+    .listadoAlbums li{
+        text-align: center;
+        justify-content: center;
+        display: block;
+    }
+
+    .botonCompraEntrada button{
+        width: 18rem;
+        height: 3rem;
+    }
+}

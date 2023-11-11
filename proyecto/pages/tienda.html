@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
     <title> Airbag | Tienda </title>
 </head>
 <body>
-    <header>
-        <nav class="navegacion">        <!-- Respecto a la navegación, me gustaría que el logo quede en el medio y sea el anchor que lleve al home, mientras que las otras anclas queden distribuidas a lo largo de la pantalla. A fines de entregar lo dejo a la izquierda en index.html pero me gustaría que quede como se ve en cualquiera de los otros sitios-->                      
-            <ul>
-                <li><a href="./laBanda.html">La Banda</a></li>
-                <li><a href="./musica.html">Musica</a></li>
+    <header class="cabecera flex-column justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="list-unstyled me-auto mb-2 mb-lg-2 flex-grow-1">
+                        <li class="container-fluid nav-item d-flex justify-content-evenly align-items-center px-0">
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./laBanda.html">La Banda</a>
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./musica.html">Música</a>
+                            <a href="../index.html"><img class="LogoTop mx-5" href="" src="../assets/img/logoAirbag.png" alt="Logo"> </a>
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./shows.html">Shows</a>
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./tienda.html">Tienda</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-                <a href="../index.html"><img class="LogoTop" href="" src="../assets/img/logoAirbag.png" alt="Logo"> </a>
-            <ul>
-                <li><a href="./shows.html">Shows</a></li>
-                <li><a href="./tienda.html">Tienda</a></li>
-            </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
+</nav>
+</header>
     <main>
         <h1> Tienda </h1>
         <h2><a href="../index.html">Volver al Home</a></h2>

@@ -3,42 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title> Airbag | La Banda </title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
 </head>
 <body>
-    <header>
-        <nav class="navegacion">        <!-- Respecto a la navegación, me gustaría que el logo quede en el medio y sea el anchor que lleve al home, mientras que las otras anclas queden distribuidas a lo largo de la pantalla. A fines de entregar lo dejo a la izquierda en index.html pero me gustaría que quede como se ve en cualquiera de los otros sitios-->                      
-            <ul>
-                <li><a href="./laBanda.html">La Banda</a></li>
-                <li><a href="./musica.html">Musica</a></li>
+    <header class="cabecera flex-column justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-light fondoPrincipal">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="list-unstyled me-auto mb-2 mb-lg-2 flex-grow-1">
+                        <li class="container-fluid nav-item d-flex justify-content-evenly align-items-center px-0">
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./laBanda.html">La Banda</a>
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./musica.html">Música</a>
+                            <a href="../index.html"><img class="LogoTop mx-5" href="" src="../assets/img/logoAirbag.png" alt="Logo"> </a>
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./shows.html">Shows</a>
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./tienda.html">Tienda</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-                <a href="../index.html"><img class="LogoTop" href="" src="../assets/img/logoAirbag.png" alt="Logo"> </a>
-            <ul>
-                <li><a href="./shows.html">Shows</a></li>
-                <li><a href="./tienda.html">Tienda</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1> La Banda </h1>
-        <h2><a href="../index.html">Volver al Home</a></h2>
+        </div>
+    </div>
+</nav>
+</header>
+<main>
+    <section class="d-flex p-0 tarjetasBanda fondoGrisOscuro">
+        <div class="d-flex col-4 mx-auto fondoGrisOscuro">
+            <img class="justify-content-center img-fluid flex-grow-1" src="../assets/img/guido.PNG" alt="">
+            <h1 class="fuente1 fuenteBlanca sombraTexto fs-4 position-absolute justify-content-end ps-3 py-3 d-flex align-items-end">Guido </h1>
+            <h2 class="fuente1 fuenteBlanca sombraTexto fs-6 position-absolute justify-content-end ps-3 py-5 d-flex align-items-end">Guitarra</h2>
+        </div>
+        <div class="d-flex col-4 mx-auto fondoGrisOscuro">
+            <img class="justify-content-center img-fluid flex-grow-1" src="../assets/img/pato1.jpg" alt="">
+            <h1 class="fuente1 fuenteBlanca sombraTexto fs-4 position-absolute justify-content-end ps-3 py-3 d-flex align-items-end">Pato </h1>
+            <h2 class="fuente1 fuenteBlanca sombraTexto fs-6 position-absolute justify-content-end ps-3 py-5 d-flex align-items-end">Guitarra</h2>
+        </div>
+        <div class="d-flex col-4 mx-auto fondoGrisOscuro">
+            <img class="justify-content-end img-fluid flex-grow-1" src="../assets/img/gaston.PNG" alt="">
+            <h1 class="fuente1 fuenteBlanca sombraTexto fs-4 position-absolute justify-content-end ps-3 py-3 d-flex align-items-end">Gaston </h1>
+            <h2 class="fuente1 fuenteBlanca sombraTexto fs-6 position-absolute justify-content-end ps-3 py-5 d-flex align-items-end">Bajo</h2>
+        </div>
+    </section>
+    <section class="textoBanda fuente2 align-items-center my-0 sombraTexto fuenteBlanca text-center p-3 px-5">    <!-- Sección donde se hace una breve introducción de la banda-->
+        <p class="align-items-center fs-4">
+            Airbag es una banda de rock Argentina formado en Don Torcuato en el año 2003. El grupo fue fundado y es integrado por los hermanos Gastón Sardelli (bajista) , Patricio Sardelli (guitarra líder y voz) y Guido Sardelli (guitarrista).
+            Empezaron desde muy pequeños a tocar juntos a mediados de los años 90's bajo el nombre de Los Nietos de Chuck, donde hacían covers de Chuck Berry, The Beatles, Creedence, entre otros.
+            <br>
+            Airbag no solo es conocida por su música, sino también por su estilo único, su carisma en el escenario y su potencia y versatilidad en vivo. Han mantenido una base de seguidores leales a lo largo de los años y continúan produciendo música emocionante que conecta con audiencias de todas las edades.
+        </p>
+    </section>
 
-        <div>    <!-- Sección donde se hace una breve introducción de la banda-->
-            <div>Pato</div>
-            <div>Guido</div>
-            <div>Gaston</div>
+    <div class="p-3 img-fluid text-center fondoGrisOscuro sombraTexto">
+        <p class="fuente2 fuenteBlanca fs-2">Seguinos en Spotify y Youtube</p>
     </div>
 
+    <section class="sectionSpotiYT fondoGrisOscuro d-flex flex-row align-content-center text-center">
+        <div class="p-3 img-fluid text-center flex-row col-6">
+            <a target="_blank" href="https://open.spotify.com/intl-es/artist/1wKDGglKV4FsFS85r2Dmpr"> <img class="logoSpotify" src="../assets/img/spotifyLogo.png" alt="logoSpotify"></a>
+        </div>
+        <div class="img-fluid text-center flex-row col-6">
+            <a target="_blank" href="https://www.youtube.com/@AIRBAGOficial"><img class="logoYoutube" src="../assets/img/youtubeLogo.png" alt="logoSpotify" href=""></a>
+        </div>
+    </section>
 
-    </main>
+    <section class="proximosShows fondoPrincipal py-3 sombraTexto"> <!-- Próximos Shows con mapa, info y que direccionen a la compra de entradas al igual que al sitio de todos los shows. Quiero poner la info a la derecha del mapa y no sé como (Ver Wireframe) -->   
+        <h2 class="d-block text-center fuente1 fuenteBlanca">
+            Próximos shows
+        </h2>
+        <div class="d-flex">
+            <iframe class="px-3 py-3 col-6 w-30" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.055640163599!2d-58.5206968!3d-34.635406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8382fb08ab9%3A0xea0ca78972856a8e!2sEstadio%20Jos%C3%A9%20Amalfitani!5e0!3m2!1ses!2sdk!4v1696512095971!5m2!1ses!2sdk" width="700" height="500" style="border: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <h3 class="py-4 col-6 fs-4 justify-content-end fuente2 fuenteBlanca">
+                <b> 15 de Diciembre</b><br>
+                Estadio José Amalfitani (Vélez Sársfield)<br>
+                20:30hs<br>
+                Av. Juan B. Justo 9200, Buenos Aires<br>
+                <br>
+                <!-- <div class="d-flex flex-column justify-content-evenly">
+                    <button class="botonCompraEntrada px-2 py-2 fuente1 fs-4 fondoPrincipal" > <a href="https://www.tuentrada.com/eventos/detalle/Airbag/517435397248" target="_blank">Comprar entrada</a></button>
+                    <br>
+                    <button class="botonCompraEntrada px-2 py-2 fuente1 fs-4 fondoPrincipal" > <a href="./pages/shows.html">Ver todos</a></button>
+                </div>
+                -->
+            </h3>      
+        </div>
+    </section>
+</main>
 
-    <footer>                                                    <!-- Pie de página / Footer-->
-        <p><h6> Todos los derechos reservados ©<br> Airbag <br>Septiembre 2023</h6></p>
-    </footer>
-    <script src="./js/bootstrap.bundle.min.js"> </script>
+<footer class="pieDePagina d-flex row p-3 col-6 fw-bolder list-unstyled justify-content-between">                                                    <!-- Pie de página / Footer-->
+    <p><h6 class="fuente2"> Todos los derechos reservados ©<br> Airbag <br>Septiembre 2023</h6></p>
+</footer>
+<script src="./js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>

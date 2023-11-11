@@ -3,63 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
     <title> Airbag | Shows </title>
 </head>
 <body>
-    <header>
-        <nav class="navegacion">        <!-- Respecto a la navegación, me gustaría que el logo quede en el medio y sea el anchor que lleve al home, mientras que las otras anclas queden distribuidas a lo largo de la pantalla. A fines de entregar lo dejo a la izquierda en index.html pero me gustaría que quede como se ve en cualquiera de los otros sitios-->                      
-            <ul>
-                <li><a href="./laBanda.html">La Banda</a></li>
-                <li><a href="./musica.html">Musica</a></li>
+    <header class="cabecera flex-column justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-light fondoPrincipal">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="list-unstyled me-auto mb-2 mb-lg-2 flex-grow-1">
+                        <li class="container-fluid nav-item d-flex justify-content-evenly align-items-center px-0">
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./laBanda.html">La Banda</a>
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./musica.html">Música</a>
+                            <a href="../index.html"><img class="LogoTop mx-5" href="" src="../assets/img/logoAirbag.png" alt="Logo"> </a>
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./shows.html">Shows</a>
+                            <a class="nav-link active fuente1 fuenteBlanca sombraTexto" aria-current="page" href="./tienda.html">Tienda</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-                <a href="../index.html"><img class="LogoTop" href="" src="../assets/img/logoAirbag.png" alt="Logo"> </a>
-            <ul>
-                <li><a href="./shows.html">Shows</a></li>
-                <li><a href="./tienda.html">Tienda</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1> Shows </h1>
-
-        <div>
-            <label for="nombre"> Nombre </label>
-            <input id ="nombre" name="nombre" type="text" placeholder="Cómo te llamás?" minlength="2" maxlength="15" required autofocus autocomplete="off">
         </div>
-        <div>
-            <label for="mail">Mail</label>
-            <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+    </div>
+</nav>
+</header>
+<main>
+    <section class="d-flex flex-row justify-content-between text-center">
+        <div class="col-4 bg-secondary  fuente2 fuenteBlanca sombraTexto text-center p-4 border-dark d-flex flex-column">
+            <h2 class="fs-3"><b>Vélez</b></h2>
+            <h3 class="fs-5">15 de Diciembre de 2023 <br> 20:30HS <br>Estadio José Amalfitani <br> <b>Buenos Aires</b></h3>
+            <a target="_blank" class="fuente1 my-3 justify-content-end" href="https://www.tuentrada.com/eventos/detalle/Airbag/517435397248">ENTRADAS</a>
         </div>
-        <div>
-            <label for="pais">Dónde vivís?</label>
-            <select name="pais" id="pais">
-                <option value="ARG" selected>Argentina</option>
-                <option value="CL" >Chile</option>
-                <option value="PE">Perú</option>
-                <option value="UY">Uruguay</option>
-                <option value="PY">Paraguay</option>
-                <option value="ES">España</option>
-                <option value="BOL">Bolivia</option>
-                <option value="OTRO">Otro</option>
-            </select>
+        <div class="col-4 bg-secondary fuente2 fuenteBlanca sombraTexto text-center p-4 border-dark d-flex flex-column">
+            <h2 class="fs-3"><b>Indie Rock Fest</b> </h2>
+            <h3 class="fs-5">25 de Noviembre de 2023 <br> Arena 1 <br> <b>Lima, Perú</b></h3>
+            <a target="_blank" class="fuente1 my-3 justify-content-end" href="https://www.tuentrada.com/eventos/detalle/Airbag/517435397248">ENTRADAS</a>
         </div>
-        <div>
-            <legend>Indique un Comentario</legend>
-            <textarea name="comentario" id="comentario" cols="60" rows="10" placeholder="Ingrese un Comentario"></textarea>
+        <div class="col-4 bg-secondary  fuente2 fuenteBlanca sombraTexto text-center p-4 border-dark d-flex flex-column">
+            <h2 class="fs-3"> <b>Próximamente</b></h2>
         </div>
+    </section>
+    
+    <div class="p-3 img-fluid text-center fondoGrisOscuro sombraTexto">
+        <p class="fuente2 fuenteBlanca fs-2">Seguinos en Spotify y Youtube</p>
+    </div>
+    <section class="sectionSpotiYT fondoGrisOscuro d-flex flex-row align-content-center text-center">
+        <div class="p-3 img-fluid text-center flex-row col-6">
+            <a target="_blank" href="https://open.spotify.com/intl-es/artist/1wKDGglKV4FsFS85r2Dmpr"> <img class="logoSpotify" src="../assets/img/spotifyLogo.png" alt="logoSpotify"></a>
+        </div>
+        <div class="img-fluid text-center flex-row col-6">
+            <a target="_blank" href="https://www.youtube.com/@AIRBAGOficial"><img class="logoYoutube" src="../assets/img/youtubeLogo.png" alt="logoSpotify" href=""></a>
+        </div>
+    </section>
+    
+    <div class="sectionSuscripcionShows d-flex p-3 fondoGrisOscuro mt-1 ">
+        <div class="sectionSuscripcionShows col-6 text-center align-content-center">
+            <video class="img-fluid flex-grow-1" src="../assets/video/videohorizontal.mp4" autoplay loop muted></video>
+        </div>
+        <section class="fs-4 d-block flex-row text-center border-5 fondoPrincipal p-3 col-6">
+            <div class="fuente2 fuenteBlanca sombraTexto">
+                <label class="mx-4" for="nombre"> Nombre: </label> <br>
+                <input class="col-8 py-1" id ="nombre" name="nombre" type="text" placeholder="Cómo te llamás?" minlength="2" maxlength="15" required autofocus autocomplete="off">
+            </div>
+            <div class="fuente2 fuenteBlanca sombraTexto">
+                <label class="mx-4" for="mail">Mail:</label><br>
+                <input class="col-8 py-1" id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+            </div>
+            <div class="fuente2 fuenteBlanca sombraTexto">
+                <label class="mx-4 py-1" for="pais">Dónde vivís?:</label><br>
+                <select name="pais" id="pais">
+                    <option value="ARG" selected>Argentina</option>
+                    <option value="CL" >Chile</option>
+                    <option value="PE">Perú</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="ES">España</option>
+                    <option value="BOL">Bolivia</option>
+                    <option value="OTRO">Otro</option>
+                </select>
+            </div>
+            <div class="px-3 py-1 fuente2 fuenteBlanca sombraTexto">
+                <legend class="fs-4">Indicá un Comentario (opcional)</legend>
+                <textarea class="fs-6 col-8" name="comentario" id="comentario" cols="50" rows="" maxlength="1000" placeholder="Ingresar un Comentario"></textarea>
+            </div>
+            <button class="px-3 fuente1 bg-dark fuenteBlanca fs-5" >Suscribirme</button>
+        </section>
+    </div>
+</main>
 
-        <button>Suscribirme</button>
-
-
-        <h2><a href="../index.html">Volver al Home</a></h2>
-
-    </main>
-    <footer>                                                    <!-- Pie de página / Footer-->
-        <p><h6> Todos los derechos reservados ©<br> Airbag <br>Septiembre 2023</h6></p>
-    </footer>
-    <script src="./js/bootstrap.bundle.min.js"> </script>
+<footer class="pieDePagina d-flex row p-3 col-6 fw-bolder list-unstyled justify-content-between">                                                    <!-- Pie de página / Footer-->
+    <p><h6 class="fuente2"> Todos los derechos reservados ©<br> Airbag <br>Septiembre 2023</h6></p>
+</footer>
+<script src="./js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>

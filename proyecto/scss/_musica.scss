@@ -1,0 +1,7 @@
+.spotifyPlugin{
+    margin: map-get($size, 1-rem);
+    &:hover{
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    }
+}

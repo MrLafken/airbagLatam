@@ -1,0 +1,60 @@
+@media screen and (max-width:768px) {
+    ul{
+        display: none;
+    }
+
+    .LogoTop{
+        min-width: 20vh;
+    }
+
+    .fotoMusica{
+        display: none;
+    }
+
+    
+    .tarjetasBanda{
+        font-size: 6;
+    }
+
+    .textoBanda{
+        font-size: 5;
+    }
+
+    .sectionSuscripcionShows{
+        display: block;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:992px) {
+    ul{
+        display: none;
+    }
+
+    .LogoTop{
+        min-width: 20vh;
+    }
+
+    .fotoMusica{
+        display: none;
+    }
+
+    .listadoAlbums li{
+        text-align: center;
+        justify-content: center;
+        display: block;
+    }
+
+    .botonCompraEntrada button{
+        width: 18rem;
+        height: 3rem;
+    }
+
+    .sectionSpotiYT{
+        display: flex;
+        flex-direction: row;
+    }
+}

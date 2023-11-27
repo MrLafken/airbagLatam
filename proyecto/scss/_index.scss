@@ -1,0 +1,46 @@
+.cabecera{
+    background-color: $color-grisOscuro;
+}
+
+.LogoTop{ 
+    max-width: map-get($size, vhS);
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+}
+
+.bannerTop{
+    background-color: $color-negro;
+    opacity: 90%;
+    padding: top -35rem;
+}
+
+
+.videoTop{
+    max-height: map-get($size, vhL);
+    height: auto;
+    object-fit: cover;
+    width: map-get($size , full);
+}
+.LogoTop{
+    min-width: map-get($size, vhXS)
+}
+
+.txtSobreImagen h1{
+    font-size: 8rem;
+  }
+
+  .listadoAlbums{
+    height: 100%;
+}
+
+.fotoMusica{
+    object-fit: contain;
+    width: map-get($size, vhL);
+    object-fit: cover;
+}
+
+.textoBanda{
+    background-color: $color-principal;
+}

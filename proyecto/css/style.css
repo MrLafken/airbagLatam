@@ -3,8 +3,67 @@
   text-shadow: 3px -1px 8px rgb(0, 0, 0);
 }
 
+.fondoPrincipal {
+  background-color: #dc1414;
+}
+
 .fondoNegro {
   background-color: black;
+}
+
+.fondoBlanco {
+  background-color: white;
+}
+
+.fondoGrisOscuro {
+  background-color: #181717;
+}
+
+.fondoGradientGrisRojo {
+  background-image: linear-gradient(to bottom, #181717, #491e1f, #791f22, #ab1b20, #dc1414);
+  background-repeat: no-repeat;
+}
+
+.fondoGradientNegroRojoHOR {
+  background-image: linear-gradient(to bottom, #181717, #3d1d1d, #611f21, #861e22, #ab1b20, #bb191d, #cc161a, #dc1414, #dc1414, #dc1414, #dc1414, #dc1414);
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #ab1b20;
+}
+
+.logoSpotify {
+  height: auto;
+  max-height: 40vh;
+}
+.logoSpotify:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.logoYoutube {
+  max-height: 60vh;
+  margin-top: -1rem;
+}
+.logoYoutube:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.sectionSpotiYT {
+  margin-top: -2rem;
+}
+
+.botonCompraEntrada {
+  color: white;
+  border-radius: 1rem;
+  width: 25rem;
+  height: 4rem;
+  box-shadow: 3px -1px 8px rgb(0, 4, 0);
 }
 
 .fuente1 {
@@ -15,7 +74,7 @@
   font-family: "Saira Extra Condensed", sans-serif;
 }
 
-.fuenteBlanca {
+.fuenteBlanca, a {
   color: white;
 }
 
@@ -29,40 +88,16 @@ html {
   scroll-behavior: smooth;
 }
 
-.sectionSuscripcionShows video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 100vh;
-  height: auto;
+.cabecera {
+  background-color: #181717;
 }
 
 .LogoTop {
-  max-width: 30vh;
+  max-width: 40vh;
 }
-
-.fondoPrincipal {
-  background-color: rgb(220, 20, 20);
-}
-
-.fondoNegro {
-  background-color: black;
-}
-
-.fondoBlanco {
-  background-color: white;
-}
-
-.fondoGrisOscuro {
-  background-color: rgb(24, 23, 23);
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.cabecera {
-  background-color: rgb(24, 23, 23);
+.LogoTop:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 .bannerTop {
@@ -80,92 +115,55 @@ a {
 }
 
 .LogoTop {
-  min-width: 30vh;
+  min-width: 20vh;
 }
 
 .txtSobreImagen h2 {
   font-size: 4.5rem;
 }
 
-.textoBanda {
-  background-color: rgb(220, 20, 20);
+.listadoAlbums {
+  height: 100%;
 }
 
 .fotoMusica {
   -o-object-fit: contain;
      object-fit: contain;
-  width: 70%;
+  width: 80vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.listadoAlbums {
-  height: 100%;
+.textoBanda {
+  background-color: #dc1414;
 }
 
-.botonCompraEntrada {
-  color: white;
-  border-radius: 1rem;
-  width: 25rem;
-  height: 4rem;
-  box-shadow: 3px -1px 8px rgb(0, 4, 0);
-}
-
-.logoSpotify {
+.sectionSuscripcionShows video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 100vh;
   height: auto;
-  max-height: 30vh;
 }
 
-.logoYoutube {
-  max-height: 40vh;
-  margin-top: -1rem;
+.spotifyPlugin {
+  margin: 1rem;
+}
+.spotifyPlugin:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s;
 }
 
-.sectionSpotiYT {
-  margin-top: -2rem;
+.bandaGuido:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
-@media screen and (max-width: 768px) {
-  ul {
-    display: none;
-  }
-  .LogoTop {
-    min-width: 20vh;
-  }
-  .fotoMusica {
-    display: none;
-  }
-  .tarjetasBanda {
-    font-size: 6;
-  }
-  .textoBanda {
-    font-size: 5;
-  }
-  .sectionSuscripcionShows {
-    display: block;
-  }
+.bandaPato:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
-@media screen and (max-width: 992px) {
-  ul {
-    display: none;
-  }
-  .LogoTop {
-    min-width: 20vh;
-  }
-  .fotoMusica {
-    display: none;
-  }
-  .listadoAlbums li {
-    text-align: center;
-    justify-content: center;
-    display: block;
-  }
-  .botonCompraEntrada button {
-    width: 18rem;
-    height: 3rem;
-  }
-  .sectionSpotiYT {
-    display: flex;
-    flex-direction: row;
-  }
+
+.bandaGaston:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }/*# sourceMappingURL=style.css.map */

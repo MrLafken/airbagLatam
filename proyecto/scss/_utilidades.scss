@@ -2,6 +2,67 @@
     text-shadow: 3px -1px 8px rgba(0,0,0,1)
 }
 
+.fondoPrincipal{
+    background-color: $color-principal;
+}
+
 .fondoNegro{
-    background-color: black;
+    background-color: $color-negro;
+}
+
+.fondoBlanco{
+    background-color: $color-blanco;
+}
+
+.fondoGrisOscuro{
+    background-color: $color-grisOscuro;
+}
+
+.fondoGradientGrisRojo{
+    background-image: linear-gradient(to bottom, #181717, #491e1f, #791f22, #ab1b20, #dc1414);
+    background-repeat: no-repeat;
+}
+
+.fondoGradientNegroRojoHOR{
+    background-image: linear-gradient(to bottom, #181717, #3d1d1d, #611f21, #861e22, #ab1b20, #bb191d, #cc161a, #dc1414, #dc1414, #dc1414, #dc1414, #dc1414);
+    background-repeat: no-repeat;
+}
+
+
+a{
+    @extend .fuenteBlanca;
+    text-decoration: none;
+    &:hover{
+        color: #ab1b20;
+    }
+}
+
+.logoSpotify{
+    height: auto;
+    max-height: map-get($size, vhS);
+    &:hover{
+        transform: scale(1.05);
+        transition: transform 0.5s;
+    }
+}
+
+.logoYoutube{
+    max-height: map-get($size, vhM );
+    margin-top: -1rem;
+    &:hover{
+        transform: scale(1.05);
+        transition: transform 0.5s;
+    }
+}
+
+.sectionSpotiYT{
+    margin-top: -2rem;
+}
+
+.botonCompraEntrada{
+    color: $color-blanco;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 4rem;
+    box-shadow: 3px -1px 8px rgba(0,4,0,4)
 }

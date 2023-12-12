@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dela+Gothic+One&family=Oswald:wght@300;400;700&family=Russo+One&family=Saira+Extra+Condensed:wght@200;400;700&display=swap');
+
+html{
+    font-size: 24px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+video{
+    margin-top: -11em;
+}
+
+.LogoTop{ 
+    max-width: 30vh;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.cabecera{
+    background-color: gray;
+}
+
+.bannerTop{
+    background-color: black;
+    opacity: 90%;
+
+}
+
+.sombraTexto{
+    text-shadow: 3px -1px 8px rgba(0,0,0,1)
+}
+
+.videoTop{
+    max-height: 85vh;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+.LogoTop{
+    min-width: 30vh;
+}
+
+.txtSobreImagen{
+    margin-top: -16em;
+}
+
+.fuente1{
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.fuente2{
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.fuenteBlanca{
+    color: white;
+}
+
+.txtSobreImagen h2{
+  font-size: 4.5rem;
+}
+
+.textoBanda{
+    background-color: brown;
+    height: auto;
+}
+
+.fotoMusica{
+    object-fit: contain;
+    width: 70%;
+    object-fit: cover;
+}
+.listadoAlbums{
+    height: 100%;
+}
+
+.botonCompraEntrada{
+    color: white;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 4rem;
+    box-shadow: 3px -1px 8px rgba(0,4,0,4)
+}
+
+@media screen and (max-width:768px) {
+    ul{
+        display: none;
+    }
+
+    .LogoTop{
+        min-width: 20vh;
+    }
+
+    .fotoMusica{
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    ul{
+        display: none;
+    }
+
+    .LogoTop{
+        min-width: 20vh;
+    }
+
+    .fotoMusica{
+        display: none;
+    }
+
+    .listadoAlbums li{
+        text-align: center;
+        justify-content: center;
+        display: block;
+    }
+
+    .botonCompraEntrada button{
+        width: 18rem;
+        height: 3rem;
+    }
+}

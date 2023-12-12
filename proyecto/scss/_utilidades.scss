@@ -28,6 +28,9 @@
     background-repeat: no-repeat;
 }
 
+.overHidden{
+    overflow: hidden;
+}
 
 a{
     @extend .fuenteBlanca;
@@ -40,6 +43,7 @@ a{
 .logoSpotify{
     height: auto;
     max-height: map-get($size, vhS);
+    max-width: map-get($size, 40 );
     &:hover{
         transform: scale(1.05);
         transition: transform 0.5s;
@@ -47,7 +51,8 @@ a{
 }
 
 .logoYoutube{
-    max-height: map-get($size, vhM );
+    max-height: map-get($size, vhL );
+    max-width: map-get($size, 40 );
     margin-top: -1rem;
     &:hover{
         transform: scale(1.05);

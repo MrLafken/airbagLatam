@@ -35,7 +35,10 @@
 </nav>
 </header>
 <main>
-    <section class="d-flex flex-row justify-content-between text-center bg-secondary">
+    <div class="p-3 img-fluid text-center bg-secondary sombraTexto overHidden" >
+        <h1 class="fuente1 fuenteBlanca fs-3" data-aos="zoom-out">Próximos Shows</h1>
+    </div>
+    <section class="d-flex flex-row justify-content-between text-center bg-secondary overHidden">
         <div class="col-4 fuente2 fuenteBlanca sombraTexto text-center p-4 border-dark d-flex flex-column" data-aos="flip-right" data-eos-delay="300" data-aos-duration="2000">
             <h2 class="fs-3"><b>Vélez</b></h2>
             <h3 class="fs-5">15 de Diciembre de 2023 <br> 20:30HS <br>Estadio José Amalfitani <br> <b>Buenos Aires</b></h3>
@@ -54,11 +57,11 @@
     <div class="p-3 img-fluid text-center fondoGrisOscuro sombraTexto" >
         <p class="fuente2 fuenteBlanca fs-2">Seguinos en Spotify y Youtube</p>
     </div>
-    <section class="sectionSpotiYT fondoGrisOscuro d-flex flex-row align-content-center text-center">
-        <div class="p-3 img-fluid text-center flex-row col-6">
+    <section class="sectionSpotiYT fondoGrisOscuro d-flex flex-row align-content-center text-center overHidden">
+        <div class="p-3 img-fluid text-center flex-row col-6" data-aos="zoom-out">
             <a target="_blank" href="https://open.spotify.com/intl-es/artist/1wKDGglKV4FsFS85r2Dmpr"> <img class="logoSpotify" src="../assets/img/spotifyLogo.png" alt="logoSpotify"></a>
         </div>
-        <div class="img-fluid text-center flex-row col-6">
+        <div class="img-fluid text-center flex-row col-6" data-aos="zoom-out">
             <a target="_blank" href="https://www.youtube.com/@AIRBAGOficial"><img class="logoYoutube" src="../assets/img/youtubeLogo.png" alt="logoSpotify" href=""></a>
         </div>
     </section>
@@ -67,18 +70,18 @@
         <div class="sectionSuscripcionShows col-6 text-center align-content-center" data-aos="fade-up-right" data-eos-duration="2000">
             <video class="img-fluid flex-grow-1" src="../assets/video/videohorizontal.mp4" autoplay loop muted></video>
         </div>
-        <section class="fs-4 d-block flex-row text-center border-5 p-3 col-6">
+        <form action="./404.html" class="fs-4 d-block flex-row text-center border-5 p-3 col-6">
             <div class="fuente2 fuenteBlanca sombraTexto">
-                <label class="mx-4" for="nombre"> Nombre: </label> <br>
+                <label class="mx-4" for="nombre"> Nombre:*</label> <br>
                 <input class="col-8 py-1" id ="nombre" name="nombre" type="text" placeholder="Cómo te llamás?" minlength="2" maxlength="15" required autofocus autocomplete="off">
             </div>
             <div class="fuente2 fuenteBlanca sombraTexto">
-                <label class="mx-4" for="mail">Mail:</label><br>
+                <label class="mx-4" for="mail">Mail:*</label><br>
                 <input class="col-8 py-1" id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
             </div>
             <div class="fuente2 fuenteBlanca sombraTexto">
-                <label class="mx-4 py-1" for="pais">Dónde vivís?:</label><br>
-                <select name="pais" id="pais">
+                <label class="mx-4 py-1" for="pais">Dónde vivís?:*</label><br>
+                <select name="pais" id="pais" required>
                     <option value="ARG" selected>Argentina</option>
                     <option value="CL" >Chile</option>
                     <option value="PE">Perú</option>
@@ -93,8 +96,8 @@
                 <legend class="fs-4">Indicá un Comentario (opcional)</legend>
                 <textarea class="fs-6 col-8" name="comentario" id="comentario" cols="50" rows="" maxlength="1000" placeholder="Ingresar un Comentario"></textarea>
             </div>
-            <button class="px-3 fuente1 bg-dark fuenteBlanca fs-5" >Suscribirme</button>
-        </section>
+            <button class="px-3 fuente1 bg-dark fuenteBlanca fs-5" type="submit">Suscribirme</button>
+        </form>
     </div>
 </main>
 

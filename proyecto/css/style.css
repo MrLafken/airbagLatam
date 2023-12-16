@@ -127,6 +127,7 @@ html {
 
 .txtSobreImagen h1 {
   font-size: 8em;
+  font-size: 20vh;
 }
 
 .listadoAlbums {
@@ -173,4 +174,48 @@ html {
 .bandaGaston:hover {
   transform: scale(1.05);
   transition: transform 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: none;
+  }
+  .LogoTop {
+    min-width: 20vh;
+  }
+  .fotoMusica {
+    display: none;
+  }
+  .tarjetasBanda {
+    font-size: 6;
+  }
+  .textoBanda {
+    font-size: 5;
+  }
+  .sectionSuscripcionShows {
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  ul {
+    display: none;
+  }
+  .LogoTop {
+    min-width: 20vh;
+  }
+  .fotoMusica {
+    display: none;
+  }
+  .listadoAlbums li {
+    text-align: center;
+    justify-content: center;
+    display: block;
+  }
+  .sectionSpotiYT {
+    display: flex;
+    flex-direction: row;
+  }
+  .pieDePagina {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

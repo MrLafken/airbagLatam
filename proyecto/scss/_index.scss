@@ -24,11 +24,12 @@
     width: map-get($size , full);
 }
 .LogoTop{
-    min-width: map-get($size, vhXS)
+    min-width: map-get($size, vhXS);
 }
 
 .txtSobreImagen h1{
     font-size: 8em;
+    font-size: map-get($size, vhXS);
   }
 
   .listadoAlbums{

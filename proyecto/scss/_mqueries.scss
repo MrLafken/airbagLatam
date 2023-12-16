@@ -23,6 +23,7 @@
     .sectionSuscripcionShows{
         display: block;
     }
+
 }
 
 
@@ -48,13 +49,12 @@
         display: block;
     }
 
-    .botonCompraEntrada button{
-        width: 18rem;
-        height: 3rem;
-    }
-
     .sectionSpotiYT{
         display: flex;
         flex-direction: row;
+    }
+
+    .pieDePagina{
+        flex-direction: column;
     }
 }

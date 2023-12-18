@@ -16,7 +16,6 @@
     padding: top -35rem;
 }
 
-
 .videoTop{
     max-height: map-get($size, vhL);
     height: auto;
@@ -30,9 +29,9 @@
 .txtSobreImagen h1{
     font-size: 8em;
     font-size: map-get($size, vhXS);
-  }
+}
 
-  .listadoAlbums{
+.listadoAlbums{
     height: 100%;
 }
 
@@ -44,4 +43,14 @@
 
 .textoBanda{
     background-color: $color-principal;
+}
+
+.LogoTopBurger{
+    max-width: map-get($size, vhS);
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s;
+        
+    }
+    display: none;
 }

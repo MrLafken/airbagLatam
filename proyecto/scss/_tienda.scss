@@ -1,0 +1,24 @@
+.tienda{
+    display: flex;
+    flex-wrap: wrap;
+}
+.productoTienda{
+    justify-content: center;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    object-fit: cover;
+    overflow:hidden;
+    min-width: 350px;
+    max-height: 500px;
+}
+.fotoProducto{
+    object-fit:cover;
+    max-height: 300px;
+}
+
+.botonCompraTienda{
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+}
